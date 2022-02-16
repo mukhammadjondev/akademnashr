@@ -1,0 +1,139 @@
+.main-link.active {
+    border: 2px solid #FF7500;
+    background-color: #fff;
+    color: #FF7500;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 20px;
+    background-color: rgba(255, 117, 0, 0.6);
+    border-radius: 10px;
+}
+
+.form-subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Condensed", "Roboto", "Arail", san-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #252420;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 190px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    display: block;
+}
+
+.form-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-control:hover input ~ span {
+    background-color: #ccc;
+}
+
+.form-control input:checked ~ span {
+    background-color: #FF7500;
+}
+
+.form-title {
+    margin: 5px;
+}
+
+/* Radio */
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.custom-radio:after {
+    top: 7px;
+    left: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    content: "";
+    display: none;
+}
+
+.form-control input:checked ~ .custom-radio:after {
+    display: block;
+}
+
+/* Chexbox */
+.custom-chexkbox {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-color: #ddd;
+}
+
+.custom-chexkbox::after {
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    transform: rotate(45deg);
+    content: "";
+    display: none;
+}
+
+.form-control input:checked ~ .custom-chexkbox:after {
+    display: block;
+}
+
+.form-link {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.form-link .main-link {
+    width: 155px;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 120px;
+}
