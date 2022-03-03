@@ -1,25 +1,36 @@
 /* Core style */
-* {
-    box-sizing: border-box;
-}
-
-*:focus {
-    outline: 2px dashed #FF7500;
-    outline-offset: 3px;
+:root {
+    --accent-color: #FF7500;
+    --font-text: "Roboto", "Arial", sans-serif;
+    --font-heading: "Roboto-Condensed", "Roboto", "Arail", san-serif;
 }
 
 html {
+    box-sizing: border-box;
+    height: 100%;
     scroll-behavior: smooth;
 }
 
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: 2px dashed var(--accent-color);
+    outline-offset: 3px;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0;
-    padding: 0; 
-    box-sizing: border-box;   
-    font-family: "Roboto", "Arial", sans-serif;
+    padding: 0;   
+    font-family: var(--font-text);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    color: #000;
 }
 
 .container {
@@ -56,7 +67,7 @@ body {
     margin-top: 4px;
     width: 92px;
     height: 3px;
-    background-color: #FF7500;
+    background-color: var(--accent-color);
 }
 
 .main-link {
@@ -65,7 +76,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.5px;
     padding: 10px 22px;
-    background-color: #FF7500;
+    background-color: var(--accent-color);
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 4px;
@@ -88,11 +99,11 @@ body {
     width: 80px;
     height: 3px;
     border: none;
-    background-color: #FF7500;
+    background-color: var(--accent-color);
 }
 
 .section__title {
-    font-family: "Roboto-Condensed", "Roboto", "Arail", san-serif;
+    font-family: var(--font-heading);
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -107,7 +118,7 @@ body {
 
 /* Header section */
 .header {
-    border-top: 5px solid #FF7500; 
+    border-top: 5px solid var(--accent-color); 
     padding: 16px 0;
 }
 
@@ -140,7 +151,7 @@ body {
 }
 
 .navigation-item a:hover {
-    color: #FF7500;
+    color: var(--accent-color);
 }
 
 .navigation-item a:active {
@@ -174,7 +185,7 @@ body {
 }
 
 .book-section__title {
-    font-family: "Roboto-Condensed", "Roboto", "Arail", san-serif;
+    font-family: var(--font-heading);
     width: 440px;
     font-size: 72px;
     line-height: 1.2;
@@ -191,7 +202,7 @@ body {
 .book-card__title {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "Roboto-Condensed", "Roboto", "Arail", san-serif;
+    font-family: var(--font-heading);
 }
 
 .book-card__icon-wrapper {
@@ -245,7 +256,7 @@ body {
 }
 
 .promotion-section__description b {
-    color: #FF7500;
+    color: var(--accent-color);
 }
 
 .promition-section__img {
@@ -282,7 +293,7 @@ body {
 }
 
 .footer-social i:hover {
-    color: #FF7500;
+    color: var(--accent-color);
 }
 
 .footer-social i:active {
@@ -330,7 +341,7 @@ body {
 }
 
 .footer-nav__item a:hover {
-    color: #FF7500;
+    color: var(--accent-color);
 }
 
 .footer-nav__item a:active {
