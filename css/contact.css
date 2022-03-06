@@ -10,7 +10,7 @@
 }
 
 form {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: rgba(255, 117, 0, 0.6);
     border-radius: 10px;
 }
@@ -19,7 +19,7 @@ form {
     display: flex;
     justify-content: center;
     font-family: "Roboto-Condensed", "Roboto", "Arail", san-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.2;
     letter-spacing: 0.5px;
     margin: 0;
@@ -47,7 +47,7 @@ select {
     position: relative;
     padding-left: 36px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .form-control input {
@@ -107,10 +107,10 @@ select {
 }
 
 .custom-chexkbox::after {
-    top: 3px;
-    left: 7px;
-    width: 4px;
-    height: 9px;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
     border: solid #fff;
     border-width: 0 3px 3px 0;
     position: absolute;
@@ -126,7 +126,7 @@ select {
 .form-link {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .form-link .main-link {
@@ -136,4 +136,12 @@ select {
 
 .footer {
     margin-top: 120px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    input[type="text"], input[type="email"], select {
+        width: 100%;
+    }
 }
